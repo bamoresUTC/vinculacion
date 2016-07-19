@@ -7,10 +7,10 @@
 	$evi=$_POST['evidencia'];
 	$meta=$_POST['meta'];
 	$cumple=$_POST['cumplimiento'];
-	$cumple2=$_POST['%cumplimiento'];
+	$cumple2=$_POST['cumplimiento2'];
 	$reco=$_POST['recomendaciones'];
 
-mysql_query("update evalucionactividad set descripcionactividadEva='$des',indicadorEva='$indica',evidenciaEva='$evi', metaEva='$meta', cumplimeintoEva='$cumple', %cumplimientoEva='$cumple2', recomendacionesEva='$reco' where idEva='$ideva'");
+mysql_query("update evalucionactividad set descripcionactividadEva='$des',indicadorEva='$indica',evidenciaEva='$evi', metaEva='$meta', cumplimeintoEva='$cumple', por_cumplimientoEva='$cumple2', recomendacionesEva='$reco' where idEva='$ideva'");
 
 	// echo ' <script language="javascript">alert("Se ha modificado correctamente :");</script> ';
 echo "<script>location.href='evaluacion_actividades.php'</script>";

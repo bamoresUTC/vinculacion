@@ -78,14 +78,14 @@ $ideva = $_GET['idEva'];
             while($fila=mysql_fetch_array($rs)) {
            ?>
            <tr>
-           <form method="post" action="proceso_editar_actividad.php">
+           <form method="post" action="proceso_editar_evalua_acti.php">
              <input type="hidden" name="idEva" value="<?php echo $fila['idEva'];?>"> 
              <td><input  name="descripcion" style=" width: 200px;" max="100" min="0"  type="text"  value="<?php echo $fila['descripcionactividadEva']; ?>"> </td>
              <td><input  name="indicador" style=" width: 200px;" max="100" min="0"  type="text"  value="<?php echo $fila['indicadorEva'];?>"> </td>
              <td><input  name="evidencia" style=" width: 200px;" max="100" min="0"  type="text"  value="<?php echo $fila['evidenciaEva'];?>"> </td>
              <td><input  name="meta" style=" width: 200px;" max="100" min="0"  type="text"  value="<?php echo $fila['metaEva'];?>"> </td>
              <td> <input name="cumplimiento" type="number"  style="width: 200px;" value="<?php echo $fila['cumplimeintoEva'];?>"> </td>
-             <td> <input name="%cumplimiento" type="number" style="width: 200px;"  value="<?php echo $fila['%cumplimientoEva'];?>">  </td>
+             <td> <input name="cumplimiento2" type="number" style="width: 200px;"  value="<?php echo $fila['por_cumplimientoEva'];?>">  </td>
              <td><input  name="recomendaciones" style=" width: 400px;" max="100" min="0"  type="text"  value="<?php echo $fila['recomendacionesEva']; ?>"> </td>
              <td class="text-center"><button class="btn btn-info" type="submit" onclick="return confirm('Esta seguro que desea modificar')" >Guardar</button></td>
            </form>

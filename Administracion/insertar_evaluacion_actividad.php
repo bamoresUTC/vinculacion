@@ -50,7 +50,7 @@ function texto() {
 							<div class="form-group"> 
 								<label for="Nombre" class="col-lg-3 control-label"> </label>
 								 <div class="col-lg-6">
-								 <input type="hidden" class="form-control" name="idusu" required placeholder="Ingrese Id_Usu" value="<?php echo $_SESSION['idUsuario'];?>">
+				<input type="text" class="form-control" name="idusu"  value="<?php echo $_SESSION['idUsuario'];?>">
 								 </div>
 							</div>
 							
@@ -93,7 +93,7 @@ function texto() {
 							<div class="form-group"> 
 								<label for="Nombre" class="col-lg-3 control-label">%Cumplimiento</label>
 								 <div class="col-lg-6">
-								 <input type="number" class="form-control" name="%cumplimiento" onkeypress="numeros();" required placeholder="Ingrese % cumplimiento">
+								 <input type="number" class="form-control" name="cumplimiento2" onkeypress="numeros();" required placeholder="Ingrese % cumplimiento">
 								 </div>
 							</div>
 							

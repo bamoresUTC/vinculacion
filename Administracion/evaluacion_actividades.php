@@ -76,7 +76,7 @@ include ("../seguridad/seguridad.php");
              <td><?php echo $fila['evidenciaEva']; ?></td>
              <td><?php echo $fila['metaEva']; ?></td>
              <td><?php echo $fila['cumplimeintoEva']; ?></td>
-             <td><?php echo $fila['%cumplimientoEva']; ?></td>
+             <td><?php echo $fila['por_cumplimientoEva']; ?></td>
              <td><?php echo $fila['recomendacionesEva']; ?></td>
              <td class="text-center"><a href="editar_evaluacion_actividad.php?idEva=<?php echo $fila['idEva'];?>& 
             descripcion=<?php echo $fila['descripcionactividadEva'];?>&
@@ -84,9 +84,9 @@ include ("../seguridad/seguridad.php");
              evidencia=<?php echo $fila['evidenciaEva'];?>&
              meta=<?php echo $fila['metaEva'];?>&
              cumplimiento=<?php echo $fila['cumplimeintoEva'];?>&
-             %cumplimiento=<?php echo $fila['%cumplimientoEva'];?>&
+             cumplimiento2=<?php echo $fila['por_cumplimientoEva'];?>&
              recomendaciones=<?php echo $fila['recomendacionesEva'];?>" class="btn btn-info">Modificar</a></td>
-             <td class="text-center"><a href="proceso_eliminar_actividad.php?idEva=<?php echo $fila['idEva']; ?>" class="btn btn-warning" onclick="return confirm('Esta seguro que desea eliminar está Evaluación de Actividad')">Eliminar</a></td>
+             <td class="text-center"><a href="proceso_eliminar_evalua_acti.php?idEva=<?php echo $fila['idEva']; ?>" class="btn btn-warning" onclick="return confirm('Esta seguro que desea eliminar está Evaluación de Actividad')">Eliminar</a></td>
            </tr>
            <?php 
               }
