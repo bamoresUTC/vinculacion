@@ -97,8 +97,10 @@ include("/conex.php");
                         <button class="btn btn-danger dropdown-toggle" data-toggle="dropdown" data-hover="dropdown">Gestionar<span class="caret"></span></button>
                         <ul class="dropdown-menu">
                             <li><a href="">Control de visitas</a></li>
-                            <li><a href="">Planificacion de actividades</a></li>   
-                             <li><a href="">Evaluacion de actividades</a></li>         
+
+                            <li><a href="/vinculacion/Administracion/actividades.php">Planificacion de actividades</a></li>   
+                             <li><a href="/vinculacion/Administracion/evaluacion_actividades.php">Evaluacion de actividades</a></li>         
+
                         </ul>
                     </div>
 			<?php }?>

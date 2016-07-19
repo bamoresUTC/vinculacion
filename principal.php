@@ -53,18 +53,34 @@
     position: relative;
     z-index: 1;
     padding: 0px;
-    background: url(images/fondo.jpg) 0 -100px repeat-x;
-    margin: 0px;
+    background: url(images/slider.jpg) 0 -100px repeat-x;
+    margin: 0px; 
     border-top: 1px #ccc solid;
+    }
+    #dnnfooter {
+    background: url(images/footerbg.jpg) 0 0 repeat;
+    padding: 0 0 30px 0;
+    color: #999;
+    margin: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+#row {
+    width: 100%;
+    max-width: 980px;
+    min-width: 755px;
+    margin: 0 auto;
+}
+    
     </style>
 </head>
-<body id="principal_1">
+<body id="principal_1" >
 <div>
 <div style="width: 500px"></div>
 <div>
-<img alt="" src="images/sello_utc.png">
+<img alt="" src="" style="bgcolor:FFCECB">
 </div>
-<center><div><h2 style="color: white; font-family: comic">DIRECCION DE VINCULACION SOCIAL</h2></div></center>
+<br><br><br><br><br><br><br><br>
+<center><div><h2 style="color: black; font-family: Times New Roman; font-size: 50px">DIRECCION DE VINCULACION SOCIAL</h2></div></center>
 </div>
  <div class="container">
         <div class="row">
@@ -76,7 +92,7 @@
                         <a class="btn btn-info dropdown-toggle" href="principal.php">INICIO</a>
                        </div>
                     <div class="btn-group">
-                        <button class="btn btn-primary dropdown-toggle" data-toggle="dropdown" data-hover="dropdown">DESCARGAS <span class="caret"></span></button>
+                        <button class="btn btn-info dropdown-toggle" data-toggle="dropdown" data-hover="dropdown">DESCARGAS <span class="caret"></span></button>
                         <ul class="dropdown-menu">
                             <li><a href="#">Formatos solicitudes</a></li>
                             <li><a href="#">Formatos informes</a></li>
@@ -227,7 +243,11 @@
 			</section>
 			
 			<script type="text/javascript"> Cufon.now(); </script>
-    
+    <div id="dnnfooter">
+    <div id="row">
+    <center>2016</center>
+    </div>
+    </div>
    
    
 </body>
