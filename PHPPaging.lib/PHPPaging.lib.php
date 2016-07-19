@@ -58,7 +58,7 @@ class PHPPaging {
         *       </code>
         *       @var int
         */
-        var $porPagina = 3;
+        var $porPagina = 4;
         
         /**
         *       Número de páginas anteriores a la actual a las que se mostrará un link directo
@@ -73,7 +73,7 @@ class PHPPaging {
         *       </code>
         *       @var int
         */
-        var $paginasAntes = 3;
+        var $paginasAntes = 4;
         
         /**
         *       Número de páginas posteriores a la actual a las que se mostrará un link directo

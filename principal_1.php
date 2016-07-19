@@ -32,15 +32,7 @@
   <script type="text/javascript" language="javascript" src="js/jquery-2.1.1.min.js"></script>
   <script type="text/javascript" language="javascript" src="js/jquery.easing.1.3.js"></script>
   <script type="text/javascript" language="javascript" src="js/jquery.skitter.min.js"></script>
-  <style type="text/css">
-  #slider-wrapper {
-    width: 940px;
-    height: 466px;
-    padding: 10px;
-    background: #fff;
-    overflow: hidden;
-}
-  </style>
+  
   
 </head>
 <body id="page1">

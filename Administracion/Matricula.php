@@ -10,7 +10,7 @@ include ("../seguridad/seguridad.php");
        require_once ("../PHPPaging.lib/PHPPaging.lib.php");
        $pagina = new PHPPaging ();
 ?>
-
+<?php $ced=$_SESSION['cedulaUsuario'];?>
 	 <?php $cdd=''?>
 <?php 						$sql="select MAX(numeroMat) as maximoMat from matricula";
 						$rs=mysql_query($sql, $conex);
@@ -164,6 +164,13 @@ $(document).find("#valor").val(x);
           </div>
         
       </div>
+      				<?php
+    include '../config.inc.php';
+    $db = new Conect_MySql ();
+    $sql = "SELECT * FROM usuario WHERE cedulaUsu='$ced'";
+    $query = $db->execute ( $sql );
+    while ( $datos = $db->fetch_row ( $query ) ) {
+        ?>
       <form action="proceso_registro_Matricula.php" method="POST" class="form-horizontal">
 							 <input type="hidden" class="form-control" name="idusu"  value="<?php echo $_SESSION['idUsuario'];?>">
 								<div class="form-group">
@@ -182,7 +189,7 @@ $(document).find("#valor").val(x);
 							<div class="form-group"> 
 								<label for="Nombre" class="col-lg-3 control-label">Nombres completros</label>
 								 <div class="col-lg-6">
-								 		 <input type="text" class="form-control" name="nombre" readonly="readonly" required placeholder="Ingrese el nombre del proyecto" value="<?php echo $_SESSION['usuario'];?>">
+								 		 <input type="text" class="form-control" name="nombre" readonly="readonly" required placeholder="Ingrese el nombre del proyecto" value="<?php echo $datos['apellidoUsu']; ?>  <?php echo $datos['segundoapellido']; ?>  <?php echo $datos['nombreUsu']; ?>  <?php echo $datos['segundonombreUsu']; ?>">
 							
 								 </div>
 							</div>
@@ -201,7 +208,7 @@ $(document).find("#valor").val(x);
 								</div>
 							</div>
 							<div class="form-group"> 
-							<label for="unidad" class="col-lg-3 control-label">Unidad academica</label>
+							<label for="unidad" class="col-lg-3 control-label">unidad academica</label>
 								<div class="col-lg-6 ">											
                            <select id="unidadA" name="unidad" class="form-control " required="required">
                                </select>
@@ -276,7 +283,7 @@ $(document).find("#valor").val(x);
 							</div>
 							<input id="valor" name="nombreTutor" type="hidden">
 						</form>
-
+ <?php  } ?>
 <footer>
 		<div class="container" style="text-align: center; background: #2c3e50; height: 143px;padding:30px;color:#fff;width: 1360px;">
 			<h3></h3>

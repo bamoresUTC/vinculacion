@@ -64,6 +64,7 @@
 <div>
 <img alt="" src="images/sello_utc.png">
 </div>
+<center><div><h2 style="color: white; font-family: comic">DIRECCION DE VINCULACION SOCIAL</h2></div></center>
 </div>
  <div class="container">
         <div class="row">
